@@ -1,1 +1,0 @@
-!! copy wasm-micro-runtime from git: https://github.com/bytecodealliance/wasm-micro-runtime and paste it inside /wamr_esp
