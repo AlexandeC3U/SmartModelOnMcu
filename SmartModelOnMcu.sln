@@ -1,0 +1,41 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "wamr_esp", "wamr_esp", "{BEF1995D-4841-FFCF-1A84-2EBB6D83D170}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "wasm-micro-runtime", "wasm-micro-runtime", "{51B4C633-7287-BFBD-B42C-CB306A45AB4D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "samples", "samples", "{77E8B066-DC7C-90B0-F81C-31A8117ED7BE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sgx-ra", "sgx-ra", "{894DCDA6-EB3A-858F-6497-C690BA1BA12A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "non-sgx-verify", "non-sgx-verify", "{7EC6E50B-C49D-2FE6-0BA4-FD996C9B0A55}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VerifyEvidence", "wamr_esp\wasm-micro-runtime\samples\sgx-ra\non-sgx-verify\csharp\VerifyEvidence.csproj", "{754E3211-55AB-DA0F-10EC-418098DA6F79}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{754E3211-55AB-DA0F-10EC-418098DA6F79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{754E3211-55AB-DA0F-10EC-418098DA6F79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{754E3211-55AB-DA0F-10EC-418098DA6F79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{754E3211-55AB-DA0F-10EC-418098DA6F79}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{51B4C633-7287-BFBD-B42C-CB306A45AB4D} = {BEF1995D-4841-FFCF-1A84-2EBB6D83D170}
+		{77E8B066-DC7C-90B0-F81C-31A8117ED7BE} = {51B4C633-7287-BFBD-B42C-CB306A45AB4D}
+		{894DCDA6-EB3A-858F-6497-C690BA1BA12A} = {77E8B066-DC7C-90B0-F81C-31A8117ED7BE}
+		{7EC6E50B-C49D-2FE6-0BA4-FD996C9B0A55} = {894DCDA6-EB3A-858F-6497-C690BA1BA12A}
+		{754E3211-55AB-DA0F-10EC-418098DA6F79} = {7EC6E50B-C49D-2FE6-0BA4-FD996C9B0A55}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3914C67E-0158-47D5-BD5D-742013252A64}
+	EndGlobalSection
+EndGlobal
