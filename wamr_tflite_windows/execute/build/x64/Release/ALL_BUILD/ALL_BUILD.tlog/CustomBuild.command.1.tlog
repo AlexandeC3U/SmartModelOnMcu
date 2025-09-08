@@ -1,0 +1,10 @@
+^C:\USERS\CEULEA\FINAL\WAMR_ESP\WASM-MICRO-RUNTIME\PRODUCT-MINI\PLATFORMS\WINDOWS\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/ceulea/final/wamr_esp/wasm-micro-runtime/product-mini/platforms/windows -BC:/Users/ceulea/final/wamr_esp/wasm-micro-runtime/product-mini/platforms/windows/build --check-stamp-file C:/Users/ceulea/final/wamr_esp/wasm-micro-runtime/product-mini/platforms/windows/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

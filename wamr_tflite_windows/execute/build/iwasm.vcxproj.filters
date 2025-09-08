@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\product-mini\platforms\windows\main.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\platform\windows\platform_init.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\platform\windows\win_atomic.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\platform\windows\win_clock.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\platform\windows\win_file.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\platform\windows\win_malloc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\platform\windows\win_memmap.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\platform\windows\win_socket.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\platform\windows\win_thread.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\platform\windows\win_time.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\platform\windows\win_util.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\platform\common\libc-util\libc_errno.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\platform\common\memory\mremap.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\utils\uncommon\bh_getopt.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\utils\uncommon\bh_read_file.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\utils\bh_assert.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\utils\bh_bitmap.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\utils\bh_common.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\utils\bh_hashmap.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\utils\bh_leb128.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\utils\bh_list.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\utils\bh_log.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\utils\bh_queue.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\utils\bh_vector.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\utils\runtime_timer.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\product-mini\platforms\windows\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{A899C872-C309-375F-9BD6-DE8F5A5128E1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,5 @@
+C:/Users/ceulea/final/wamr_esp/wasm-micro-runtime/product-mini/platforms/windows/build/CMakeFiles/iwasm.dir
+C:/Users/ceulea/final/wamr_esp/wasm-micro-runtime/product-mini/platforms/windows/build/CMakeFiles/vmlib.dir
+C:/Users/ceulea/final/wamr_esp/wasm-micro-runtime/product-mini/platforms/windows/build/CMakeFiles/INSTALL.dir
+C:/Users/ceulea/final/wamr_esp/wasm-micro-runtime/product-mini/platforms/windows/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/ceulea/final/wamr_esp/wasm-micro-runtime/product-mini/platforms/windows/build/CMakeFiles/ZERO_CHECK.dir

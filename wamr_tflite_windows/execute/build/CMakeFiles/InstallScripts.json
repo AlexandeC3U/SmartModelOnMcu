@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"C:/Users/ceulea/final/wamr_esp/wasm-micro-runtime/product-mini/platforms/windows/build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

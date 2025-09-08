@@ -1,0 +1,443 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{43407383-CB3F-3344-ADD9-688AC8555362}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>iwasm</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\product-mini\platforms\windows\build\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">iwasm.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">iwasm</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\product-mini\platforms\windows\build\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">iwasm.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">iwasm</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\product-mini\platforms\windows\build\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">iwasm.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">iwasm</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\product-mini\platforms\windows\build\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">iwasm.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">iwasm</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\iwasm\interpreter;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\iwasm\libraries\libc-builtin;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\iwasm\libraries\libc-wasi\sandboxed-system-primitives\include;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\iwasm\libraries\libc-wasi\sandboxed-system-primitives\src;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\product-mini\platforms\windows\..\..\..\core\iwasm\include;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\platform\windows;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\platform\windows\..\include;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\platform\common\libc-util;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\mem-alloc;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\iwasm\common;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\utils;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\utils\uncommon;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /experimental:c11atomics</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard_C>stdc11</LanguageStandard_C>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;WASM_ENABLE_INTERP=1;WASM_ENABLE_LIBC_BUILTIN=1;WASM_ENABLE_LIBC_WASI=1;BUILD_TARGET_X86_64;WASM_ENABLE_FAST_INTERP=1;WASM_ENABLE_MULTI_MODULE=0;WASM_ENABLE_BULK_MEMORY=1;WASM_ENABLE_SHARED_MEMORY=0;WASM_ENABLE_MINI_LOADER=0;WASM_DISABLE_HW_BOUND_CHECK=0;WASM_DISABLE_STACK_HW_BOUND_CHECK=0;WASM_DISABLE_WAKEUP_BLOCKING_OP=0;WASM_ENABLE_SIMD=1;WASM_GLOBAL_HEAP_SIZE=10485760;WASM_ENABLE_MODULE_INST_CONTEXT=1;WASM_ENABLE_QUICK_AOT_ENTRY=0;WASM_ENABLE_AOT_INTRINSICS=0;WASM_ENABLE_SHRUNK_MEMORY=1;WASM_ENABLE_EXTENDED_CONST_EXPR=0;COMPILING_WASM_RUNTIME_API=1;BH_PLATFORM_WINDOWS;HAVE_STRUCT_TIMESPEC;_WINSOCK_DEPRECATED_NO_WARNINGS;BH_MALLOC=wasm_runtime_malloc;BH_FREE=wasm_runtime_free;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;WASM_ENABLE_INTERP=1;WASM_ENABLE_LIBC_BUILTIN=1;WASM_ENABLE_LIBC_WASI=1;BUILD_TARGET_X86_64;WASM_ENABLE_FAST_INTERP=1;WASM_ENABLE_MULTI_MODULE=0;WASM_ENABLE_BULK_MEMORY=1;WASM_ENABLE_SHARED_MEMORY=0;WASM_ENABLE_MINI_LOADER=0;WASM_DISABLE_HW_BOUND_CHECK=0;WASM_DISABLE_STACK_HW_BOUND_CHECK=0;WASM_DISABLE_WAKEUP_BLOCKING_OP=0;WASM_ENABLE_SIMD=1;WASM_GLOBAL_HEAP_SIZE=10485760;WASM_ENABLE_MODULE_INST_CONTEXT=1;WASM_ENABLE_QUICK_AOT_ENTRY=0;WASM_ENABLE_AOT_INTRINSICS=0;WASM_ENABLE_SHRUNK_MEMORY=1;WASM_ENABLE_EXTENDED_CONST_EXPR=0;COMPILING_WASM_RUNTIME_API=1;BH_PLATFORM_WINDOWS;HAVE_STRUCT_TIMESPEC;_WINSOCK_DEPRECATED_NO_WARNINGS;BH_MALLOC=wasm_runtime_malloc;BH_FREE=wasm_runtime_free;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\iwasm\interpreter;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\iwasm\libraries\libc-builtin;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\iwasm\libraries\libc-wasi\sandboxed-system-primitives\include;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\iwasm\libraries\libc-wasi\sandboxed-system-primitives\src;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\product-mini\platforms\windows\..\..\..\core\iwasm\include;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\platform\windows;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\platform\windows\..\include;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\platform\common\libc-util;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\mem-alloc;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\iwasm\common;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\utils;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\utils\uncommon;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;WASM_ENABLE_INTERP=1;WASM_ENABLE_LIBC_BUILTIN=1;WASM_ENABLE_LIBC_WASI=1;BUILD_TARGET_X86_64;WASM_ENABLE_FAST_INTERP=1;WASM_ENABLE_MULTI_MODULE=0;WASM_ENABLE_BULK_MEMORY=1;WASM_ENABLE_SHARED_MEMORY=0;WASM_ENABLE_MINI_LOADER=0;WASM_DISABLE_HW_BOUND_CHECK=0;WASM_DISABLE_STACK_HW_BOUND_CHECK=0;WASM_DISABLE_WAKEUP_BLOCKING_OP=0;WASM_ENABLE_SIMD=1;WASM_GLOBAL_HEAP_SIZE=10485760;WASM_ENABLE_MODULE_INST_CONTEXT=1;WASM_ENABLE_QUICK_AOT_ENTRY=0;WASM_ENABLE_AOT_INTRINSICS=0;WASM_ENABLE_SHRUNK_MEMORY=1;WASM_ENABLE_EXTENDED_CONST_EXPR=0;COMPILING_WASM_RUNTIME_API=1;BH_PLATFORM_WINDOWS;HAVE_STRUCT_TIMESPEC;_WINSOCK_DEPRECATED_NO_WARNINGS;BH_MALLOC=wasm_runtime_malloc;BH_FREE=wasm_runtime_free;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <IncludePaths>C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\iwasm\interpreter;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\iwasm\libraries\libc-builtin;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\iwasm\libraries\libc-wasi\sandboxed-system-primitives\include;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\iwasm\libraries\libc-wasi\sandboxed-system-primitives\src;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\product-mini\platforms\windows\..\..\..\core\iwasm\include;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\platform\windows;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\platform\windows\..\include;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\platform\common\libc-util;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\mem-alloc;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\iwasm\common;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\utils;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\utils\uncommon;%(IncludePaths)</IncludePaths>
+      <AdditionalOptions>%(AdditionalOptions) /experimental:c11atomics</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\iwasm\interpreter;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\iwasm\libraries\libc-builtin;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\iwasm\libraries\libc-wasi\sandboxed-system-primitives\include;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\iwasm\libraries\libc-wasi\sandboxed-system-primitives\src;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\product-mini\platforms\windows\..\..\..\core\iwasm\include;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\platform\windows;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\platform\windows\..\include;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\platform\common\libc-util;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\mem-alloc;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\iwasm\common;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\utils;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\utils\uncommon;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>Debug\libiwasm.lib;ntdll.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+      <ImportLibrary>C:/Users/ceulea/final/wamr_esp/wasm-micro-runtime/product-mini/platforms/windows/build/Debug/iwasm.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ProgramDataBaseFile>C:/Users/ceulea/final/wamr_esp/wasm-micro-runtime/product-mini/platforms/windows/build/Debug/iwasm.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem>Console</SubSystem>
+      <Version>2.4</Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\iwasm\interpreter;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\iwasm\libraries\libc-builtin;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\iwasm\libraries\libc-wasi\sandboxed-system-primitives\include;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\iwasm\libraries\libc-wasi\sandboxed-system-primitives\src;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\product-mini\platforms\windows\..\..\..\core\iwasm\include;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\platform\windows;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\platform\windows\..\include;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\platform\common\libc-util;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\mem-alloc;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\iwasm\common;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\utils;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\utils\uncommon;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /experimental:c11atomics</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard_C>stdc11</LanguageStandard_C>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;WASM_ENABLE_INTERP=1;WASM_ENABLE_LIBC_BUILTIN=1;WASM_ENABLE_LIBC_WASI=1;BUILD_TARGET_X86_64;WASM_ENABLE_FAST_INTERP=1;WASM_ENABLE_MULTI_MODULE=0;WASM_ENABLE_BULK_MEMORY=1;WASM_ENABLE_SHARED_MEMORY=0;WASM_ENABLE_MINI_LOADER=0;WASM_DISABLE_HW_BOUND_CHECK=0;WASM_DISABLE_STACK_HW_BOUND_CHECK=0;WASM_DISABLE_WAKEUP_BLOCKING_OP=0;WASM_ENABLE_SIMD=1;WASM_GLOBAL_HEAP_SIZE=10485760;WASM_ENABLE_MODULE_INST_CONTEXT=1;WASM_ENABLE_QUICK_AOT_ENTRY=0;WASM_ENABLE_AOT_INTRINSICS=0;WASM_ENABLE_SHRUNK_MEMORY=1;WASM_ENABLE_EXTENDED_CONST_EXPR=0;COMPILING_WASM_RUNTIME_API=1;BH_PLATFORM_WINDOWS;HAVE_STRUCT_TIMESPEC;_WINSOCK_DEPRECATED_NO_WARNINGS;BH_MALLOC=wasm_runtime_malloc;BH_FREE=wasm_runtime_free;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;WASM_ENABLE_INTERP=1;WASM_ENABLE_LIBC_BUILTIN=1;WASM_ENABLE_LIBC_WASI=1;BUILD_TARGET_X86_64;WASM_ENABLE_FAST_INTERP=1;WASM_ENABLE_MULTI_MODULE=0;WASM_ENABLE_BULK_MEMORY=1;WASM_ENABLE_SHARED_MEMORY=0;WASM_ENABLE_MINI_LOADER=0;WASM_DISABLE_HW_BOUND_CHECK=0;WASM_DISABLE_STACK_HW_BOUND_CHECK=0;WASM_DISABLE_WAKEUP_BLOCKING_OP=0;WASM_ENABLE_SIMD=1;WASM_GLOBAL_HEAP_SIZE=10485760;WASM_ENABLE_MODULE_INST_CONTEXT=1;WASM_ENABLE_QUICK_AOT_ENTRY=0;WASM_ENABLE_AOT_INTRINSICS=0;WASM_ENABLE_SHRUNK_MEMORY=1;WASM_ENABLE_EXTENDED_CONST_EXPR=0;COMPILING_WASM_RUNTIME_API=1;BH_PLATFORM_WINDOWS;HAVE_STRUCT_TIMESPEC;_WINSOCK_DEPRECATED_NO_WARNINGS;BH_MALLOC=wasm_runtime_malloc;BH_FREE=wasm_runtime_free;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\iwasm\interpreter;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\iwasm\libraries\libc-builtin;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\iwasm\libraries\libc-wasi\sandboxed-system-primitives\include;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\iwasm\libraries\libc-wasi\sandboxed-system-primitives\src;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\product-mini\platforms\windows\..\..\..\core\iwasm\include;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\platform\windows;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\platform\windows\..\include;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\platform\common\libc-util;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\mem-alloc;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\iwasm\common;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\utils;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\utils\uncommon;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;WASM_ENABLE_INTERP=1;WASM_ENABLE_LIBC_BUILTIN=1;WASM_ENABLE_LIBC_WASI=1;BUILD_TARGET_X86_64;WASM_ENABLE_FAST_INTERP=1;WASM_ENABLE_MULTI_MODULE=0;WASM_ENABLE_BULK_MEMORY=1;WASM_ENABLE_SHARED_MEMORY=0;WASM_ENABLE_MINI_LOADER=0;WASM_DISABLE_HW_BOUND_CHECK=0;WASM_DISABLE_STACK_HW_BOUND_CHECK=0;WASM_DISABLE_WAKEUP_BLOCKING_OP=0;WASM_ENABLE_SIMD=1;WASM_GLOBAL_HEAP_SIZE=10485760;WASM_ENABLE_MODULE_INST_CONTEXT=1;WASM_ENABLE_QUICK_AOT_ENTRY=0;WASM_ENABLE_AOT_INTRINSICS=0;WASM_ENABLE_SHRUNK_MEMORY=1;WASM_ENABLE_EXTENDED_CONST_EXPR=0;COMPILING_WASM_RUNTIME_API=1;BH_PLATFORM_WINDOWS;HAVE_STRUCT_TIMESPEC;_WINSOCK_DEPRECATED_NO_WARNINGS;BH_MALLOC=wasm_runtime_malloc;BH_FREE=wasm_runtime_free;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <IncludePaths>C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\iwasm\interpreter;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\iwasm\libraries\libc-builtin;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\iwasm\libraries\libc-wasi\sandboxed-system-primitives\include;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\iwasm\libraries\libc-wasi\sandboxed-system-primitives\src;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\product-mini\platforms\windows\..\..\..\core\iwasm\include;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\platform\windows;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\platform\windows\..\include;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\platform\common\libc-util;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\mem-alloc;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\iwasm\common;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\utils;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\utils\uncommon;%(IncludePaths)</IncludePaths>
+      <AdditionalOptions>%(AdditionalOptions) /experimental:c11atomics</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\iwasm\interpreter;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\iwasm\libraries\libc-builtin;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\iwasm\libraries\libc-wasi\sandboxed-system-primitives\include;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\iwasm\libraries\libc-wasi\sandboxed-system-primitives\src;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\product-mini\platforms\windows\..\..\..\core\iwasm\include;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\platform\windows;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\platform\windows\..\include;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\platform\common\libc-util;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\mem-alloc;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\iwasm\common;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\utils;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\utils\uncommon;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>Release\libiwasm.lib;ntdll.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+      <ImportLibrary>C:/Users/ceulea/final/wamr_esp/wasm-micro-runtime/product-mini/platforms/windows/build/Release/iwasm.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ProgramDataBaseFile>C:/Users/ceulea/final/wamr_esp/wasm-micro-runtime/product-mini/platforms/windows/build/Release/iwasm.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem>Console</SubSystem>
+      <Version>2.4</Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\iwasm\interpreter;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\iwasm\libraries\libc-builtin;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\iwasm\libraries\libc-wasi\sandboxed-system-primitives\include;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\iwasm\libraries\libc-wasi\sandboxed-system-primitives\src;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\product-mini\platforms\windows\..\..\..\core\iwasm\include;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\platform\windows;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\platform\windows\..\include;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\platform\common\libc-util;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\mem-alloc;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\iwasm\common;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\utils;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\utils\uncommon;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /experimental:c11atomics</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard_C>stdc11</LanguageStandard_C>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;WASM_ENABLE_INTERP=1;WASM_ENABLE_LIBC_BUILTIN=1;WASM_ENABLE_LIBC_WASI=1;BUILD_TARGET_X86_64;WASM_ENABLE_FAST_INTERP=1;WASM_ENABLE_MULTI_MODULE=0;WASM_ENABLE_BULK_MEMORY=1;WASM_ENABLE_SHARED_MEMORY=0;WASM_ENABLE_MINI_LOADER=0;WASM_DISABLE_HW_BOUND_CHECK=0;WASM_DISABLE_STACK_HW_BOUND_CHECK=0;WASM_DISABLE_WAKEUP_BLOCKING_OP=0;WASM_ENABLE_SIMD=1;WASM_GLOBAL_HEAP_SIZE=10485760;WASM_ENABLE_MODULE_INST_CONTEXT=1;WASM_ENABLE_QUICK_AOT_ENTRY=0;WASM_ENABLE_AOT_INTRINSICS=0;WASM_ENABLE_SHRUNK_MEMORY=1;WASM_ENABLE_EXTENDED_CONST_EXPR=0;COMPILING_WASM_RUNTIME_API=1;BH_PLATFORM_WINDOWS;HAVE_STRUCT_TIMESPEC;_WINSOCK_DEPRECATED_NO_WARNINGS;BH_MALLOC=wasm_runtime_malloc;BH_FREE=wasm_runtime_free;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;WASM_ENABLE_INTERP=1;WASM_ENABLE_LIBC_BUILTIN=1;WASM_ENABLE_LIBC_WASI=1;BUILD_TARGET_X86_64;WASM_ENABLE_FAST_INTERP=1;WASM_ENABLE_MULTI_MODULE=0;WASM_ENABLE_BULK_MEMORY=1;WASM_ENABLE_SHARED_MEMORY=0;WASM_ENABLE_MINI_LOADER=0;WASM_DISABLE_HW_BOUND_CHECK=0;WASM_DISABLE_STACK_HW_BOUND_CHECK=0;WASM_DISABLE_WAKEUP_BLOCKING_OP=0;WASM_ENABLE_SIMD=1;WASM_GLOBAL_HEAP_SIZE=10485760;WASM_ENABLE_MODULE_INST_CONTEXT=1;WASM_ENABLE_QUICK_AOT_ENTRY=0;WASM_ENABLE_AOT_INTRINSICS=0;WASM_ENABLE_SHRUNK_MEMORY=1;WASM_ENABLE_EXTENDED_CONST_EXPR=0;COMPILING_WASM_RUNTIME_API=1;BH_PLATFORM_WINDOWS;HAVE_STRUCT_TIMESPEC;_WINSOCK_DEPRECATED_NO_WARNINGS;BH_MALLOC=wasm_runtime_malloc;BH_FREE=wasm_runtime_free;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\iwasm\interpreter;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\iwasm\libraries\libc-builtin;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\iwasm\libraries\libc-wasi\sandboxed-system-primitives\include;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\iwasm\libraries\libc-wasi\sandboxed-system-primitives\src;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\product-mini\platforms\windows\..\..\..\core\iwasm\include;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\platform\windows;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\platform\windows\..\include;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\platform\common\libc-util;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\mem-alloc;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\iwasm\common;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\utils;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\utils\uncommon;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;WASM_ENABLE_INTERP=1;WASM_ENABLE_LIBC_BUILTIN=1;WASM_ENABLE_LIBC_WASI=1;BUILD_TARGET_X86_64;WASM_ENABLE_FAST_INTERP=1;WASM_ENABLE_MULTI_MODULE=0;WASM_ENABLE_BULK_MEMORY=1;WASM_ENABLE_SHARED_MEMORY=0;WASM_ENABLE_MINI_LOADER=0;WASM_DISABLE_HW_BOUND_CHECK=0;WASM_DISABLE_STACK_HW_BOUND_CHECK=0;WASM_DISABLE_WAKEUP_BLOCKING_OP=0;WASM_ENABLE_SIMD=1;WASM_GLOBAL_HEAP_SIZE=10485760;WASM_ENABLE_MODULE_INST_CONTEXT=1;WASM_ENABLE_QUICK_AOT_ENTRY=0;WASM_ENABLE_AOT_INTRINSICS=0;WASM_ENABLE_SHRUNK_MEMORY=1;WASM_ENABLE_EXTENDED_CONST_EXPR=0;COMPILING_WASM_RUNTIME_API=1;BH_PLATFORM_WINDOWS;HAVE_STRUCT_TIMESPEC;_WINSOCK_DEPRECATED_NO_WARNINGS;BH_MALLOC=wasm_runtime_malloc;BH_FREE=wasm_runtime_free;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <IncludePaths>C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\iwasm\interpreter;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\iwasm\libraries\libc-builtin;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\iwasm\libraries\libc-wasi\sandboxed-system-primitives\include;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\iwasm\libraries\libc-wasi\sandboxed-system-primitives\src;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\product-mini\platforms\windows\..\..\..\core\iwasm\include;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\platform\windows;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\platform\windows\..\include;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\platform\common\libc-util;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\mem-alloc;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\iwasm\common;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\utils;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\utils\uncommon;%(IncludePaths)</IncludePaths>
+      <AdditionalOptions>%(AdditionalOptions) /experimental:c11atomics</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\iwasm\interpreter;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\iwasm\libraries\libc-builtin;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\iwasm\libraries\libc-wasi\sandboxed-system-primitives\include;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\iwasm\libraries\libc-wasi\sandboxed-system-primitives\src;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\product-mini\platforms\windows\..\..\..\core\iwasm\include;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\platform\windows;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\platform\windows\..\include;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\platform\common\libc-util;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\mem-alloc;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\iwasm\common;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\utils;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\utils\uncommon;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>MinSizeRel\libiwasm.lib;ntdll.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+      <ImportLibrary>C:/Users/ceulea/final/wamr_esp/wasm-micro-runtime/product-mini/platforms/windows/build/MinSizeRel/iwasm.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ProgramDataBaseFile>C:/Users/ceulea/final/wamr_esp/wasm-micro-runtime/product-mini/platforms/windows/build/MinSizeRel/iwasm.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem>Console</SubSystem>
+      <Version>2.4</Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\iwasm\interpreter;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\iwasm\libraries\libc-builtin;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\iwasm\libraries\libc-wasi\sandboxed-system-primitives\include;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\iwasm\libraries\libc-wasi\sandboxed-system-primitives\src;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\product-mini\platforms\windows\..\..\..\core\iwasm\include;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\platform\windows;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\platform\windows\..\include;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\platform\common\libc-util;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\mem-alloc;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\iwasm\common;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\utils;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\utils\uncommon;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /experimental:c11atomics</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard_C>stdc11</LanguageStandard_C>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;WASM_ENABLE_INTERP=1;WASM_ENABLE_LIBC_BUILTIN=1;WASM_ENABLE_LIBC_WASI=1;BUILD_TARGET_X86_64;WASM_ENABLE_FAST_INTERP=1;WASM_ENABLE_MULTI_MODULE=0;WASM_ENABLE_BULK_MEMORY=1;WASM_ENABLE_SHARED_MEMORY=0;WASM_ENABLE_MINI_LOADER=0;WASM_DISABLE_HW_BOUND_CHECK=0;WASM_DISABLE_STACK_HW_BOUND_CHECK=0;WASM_DISABLE_WAKEUP_BLOCKING_OP=0;WASM_ENABLE_SIMD=1;WASM_GLOBAL_HEAP_SIZE=10485760;WASM_ENABLE_MODULE_INST_CONTEXT=1;WASM_ENABLE_QUICK_AOT_ENTRY=0;WASM_ENABLE_AOT_INTRINSICS=0;WASM_ENABLE_SHRUNK_MEMORY=1;WASM_ENABLE_EXTENDED_CONST_EXPR=0;COMPILING_WASM_RUNTIME_API=1;BH_PLATFORM_WINDOWS;HAVE_STRUCT_TIMESPEC;_WINSOCK_DEPRECATED_NO_WARNINGS;BH_MALLOC=wasm_runtime_malloc;BH_FREE=wasm_runtime_free;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;WASM_ENABLE_INTERP=1;WASM_ENABLE_LIBC_BUILTIN=1;WASM_ENABLE_LIBC_WASI=1;BUILD_TARGET_X86_64;WASM_ENABLE_FAST_INTERP=1;WASM_ENABLE_MULTI_MODULE=0;WASM_ENABLE_BULK_MEMORY=1;WASM_ENABLE_SHARED_MEMORY=0;WASM_ENABLE_MINI_LOADER=0;WASM_DISABLE_HW_BOUND_CHECK=0;WASM_DISABLE_STACK_HW_BOUND_CHECK=0;WASM_DISABLE_WAKEUP_BLOCKING_OP=0;WASM_ENABLE_SIMD=1;WASM_GLOBAL_HEAP_SIZE=10485760;WASM_ENABLE_MODULE_INST_CONTEXT=1;WASM_ENABLE_QUICK_AOT_ENTRY=0;WASM_ENABLE_AOT_INTRINSICS=0;WASM_ENABLE_SHRUNK_MEMORY=1;WASM_ENABLE_EXTENDED_CONST_EXPR=0;COMPILING_WASM_RUNTIME_API=1;BH_PLATFORM_WINDOWS;HAVE_STRUCT_TIMESPEC;_WINSOCK_DEPRECATED_NO_WARNINGS;BH_MALLOC=wasm_runtime_malloc;BH_FREE=wasm_runtime_free;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\iwasm\interpreter;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\iwasm\libraries\libc-builtin;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\iwasm\libraries\libc-wasi\sandboxed-system-primitives\include;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\iwasm\libraries\libc-wasi\sandboxed-system-primitives\src;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\product-mini\platforms\windows\..\..\..\core\iwasm\include;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\platform\windows;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\platform\windows\..\include;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\platform\common\libc-util;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\mem-alloc;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\iwasm\common;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\utils;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\utils\uncommon;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;WASM_ENABLE_INTERP=1;WASM_ENABLE_LIBC_BUILTIN=1;WASM_ENABLE_LIBC_WASI=1;BUILD_TARGET_X86_64;WASM_ENABLE_FAST_INTERP=1;WASM_ENABLE_MULTI_MODULE=0;WASM_ENABLE_BULK_MEMORY=1;WASM_ENABLE_SHARED_MEMORY=0;WASM_ENABLE_MINI_LOADER=0;WASM_DISABLE_HW_BOUND_CHECK=0;WASM_DISABLE_STACK_HW_BOUND_CHECK=0;WASM_DISABLE_WAKEUP_BLOCKING_OP=0;WASM_ENABLE_SIMD=1;WASM_GLOBAL_HEAP_SIZE=10485760;WASM_ENABLE_MODULE_INST_CONTEXT=1;WASM_ENABLE_QUICK_AOT_ENTRY=0;WASM_ENABLE_AOT_INTRINSICS=0;WASM_ENABLE_SHRUNK_MEMORY=1;WASM_ENABLE_EXTENDED_CONST_EXPR=0;COMPILING_WASM_RUNTIME_API=1;BH_PLATFORM_WINDOWS;HAVE_STRUCT_TIMESPEC;_WINSOCK_DEPRECATED_NO_WARNINGS;BH_MALLOC=wasm_runtime_malloc;BH_FREE=wasm_runtime_free;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <IncludePaths>C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\iwasm\interpreter;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\iwasm\libraries\libc-builtin;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\iwasm\libraries\libc-wasi\sandboxed-system-primitives\include;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\iwasm\libraries\libc-wasi\sandboxed-system-primitives\src;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\product-mini\platforms\windows\..\..\..\core\iwasm\include;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\platform\windows;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\platform\windows\..\include;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\platform\common\libc-util;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\mem-alloc;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\iwasm\common;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\utils;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\utils\uncommon;%(IncludePaths)</IncludePaths>
+      <AdditionalOptions>%(AdditionalOptions) /experimental:c11atomics</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\iwasm\interpreter;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\iwasm\libraries\libc-builtin;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\iwasm\libraries\libc-wasi\sandboxed-system-primitives\include;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\iwasm\libraries\libc-wasi\sandboxed-system-primitives\src;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\product-mini\platforms\windows\..\..\..\core\iwasm\include;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\platform\windows;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\platform\windows\..\include;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\platform\common\libc-util;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\mem-alloc;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\iwasm\common;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\utils;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\utils\uncommon;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>RelWithDebInfo\libiwasm.lib;ntdll.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+      <ImportLibrary>C:/Users/ceulea/final/wamr_esp/wasm-micro-runtime/product-mini/platforms/windows/build/RelWithDebInfo/iwasm.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ProgramDataBaseFile>C:/Users/ceulea/final/wamr_esp/wasm-micro-runtime/product-mini/platforms/windows/build/RelWithDebInfo/iwasm.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem>Console</SubSystem>
+      <Version>2.4</Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\product-mini\platforms\windows\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/ceulea/final/wamr_esp/wasm-micro-runtime/product-mini/platforms/windows/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/ceulea/final/wamr_esp/wasm-micro-runtime/product-mini/platforms/windows -BC:/Users/ceulea/final/wamr_esp/wasm-micro-runtime/product-mini/platforms/windows/build --check-stamp-file C:/Users/ceulea/final/wamr_esp/wasm-micro-runtime/product-mini/platforms/windows/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-4.1\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeASMInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeASM_MASMInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\MSVC-ASM.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Internal\CMakeASMLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Internal\CMakeASM_MASMLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Internal\CMakeCLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Linker\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Linker\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Linker\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Linker\GNU.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-ASM.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-GNU-ASM.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-GNU.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\WriteBasicConfigVersionFile.cmake;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\build-scripts\config_common.cmake;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\build-scripts\iwasmConfig.cmake.in;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\build-scripts\package.cmake;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\build-scripts\runtime_lib.cmake;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\build-scripts\version.cmake;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\iwasm\common\iwasm_common.cmake;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\iwasm\interpreter\iwasm_interp.cmake;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\iwasm\libraries\libc-builtin\libc_builtin.cmake;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\iwasm\libraries\libc-wasi\libc_wasi.cmake;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\mem-alloc\mem_alloc.cmake;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\platform\common\libc-util\platform_common_libc_util.cmake;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\platform\common\memory\platform_api_memory.cmake;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\platform\windows\shared_platform.cmake;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\utils\shared_utils.cmake;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\utils\uncommon\shared_uncommon.cmake;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\version.h.in;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\product-mini\platforms\windows\build\CMakeFiles\4.1.0\CMakeASMCompiler.cmake;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\product-mini\platforms\windows\build\CMakeFiles\4.1.0\CMakeASM_MASMCompiler.cmake;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\product-mini\platforms\windows\build\CMakeFiles\4.1.0\CMakeCCompiler.cmake;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\product-mini\platforms\windows\build\CMakeFiles\4.1.0\CMakeCXXCompiler.cmake;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\product-mini\platforms\windows\build\CMakeFiles\4.1.0\CMakeRCCompiler.cmake;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\product-mini\platforms\windows\build\CMakeFiles\4.1.0\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\product-mini\platforms\windows\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/ceulea/final/wamr_esp/wasm-micro-runtime/product-mini/platforms/windows/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/ceulea/final/wamr_esp/wasm-micro-runtime/product-mini/platforms/windows -BC:/Users/ceulea/final/wamr_esp/wasm-micro-runtime/product-mini/platforms/windows/build --check-stamp-file C:/Users/ceulea/final/wamr_esp/wasm-micro-runtime/product-mini/platforms/windows/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-4.1\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeASMInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeASM_MASMInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\MSVC-ASM.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Internal\CMakeASMLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Internal\CMakeASM_MASMLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Internal\CMakeCLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Linker\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Linker\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Linker\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Linker\GNU.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-ASM.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-GNU-ASM.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-GNU.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\WriteBasicConfigVersionFile.cmake;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\build-scripts\config_common.cmake;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\build-scripts\iwasmConfig.cmake.in;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\build-scripts\package.cmake;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\build-scripts\runtime_lib.cmake;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\build-scripts\version.cmake;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\iwasm\common\iwasm_common.cmake;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\iwasm\interpreter\iwasm_interp.cmake;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\iwasm\libraries\libc-builtin\libc_builtin.cmake;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\iwasm\libraries\libc-wasi\libc_wasi.cmake;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\mem-alloc\mem_alloc.cmake;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\platform\common\libc-util\platform_common_libc_util.cmake;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\platform\common\memory\platform_api_memory.cmake;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\platform\windows\shared_platform.cmake;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\utils\shared_utils.cmake;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\utils\uncommon\shared_uncommon.cmake;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\version.h.in;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\product-mini\platforms\windows\build\CMakeFiles\4.1.0\CMakeASMCompiler.cmake;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\product-mini\platforms\windows\build\CMakeFiles\4.1.0\CMakeASM_MASMCompiler.cmake;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\product-mini\platforms\windows\build\CMakeFiles\4.1.0\CMakeCCompiler.cmake;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\product-mini\platforms\windows\build\CMakeFiles\4.1.0\CMakeCXXCompiler.cmake;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\product-mini\platforms\windows\build\CMakeFiles\4.1.0\CMakeRCCompiler.cmake;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\product-mini\platforms\windows\build\CMakeFiles\4.1.0\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\product-mini\platforms\windows\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/ceulea/final/wamr_esp/wasm-micro-runtime/product-mini/platforms/windows/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/ceulea/final/wamr_esp/wasm-micro-runtime/product-mini/platforms/windows -BC:/Users/ceulea/final/wamr_esp/wasm-micro-runtime/product-mini/platforms/windows/build --check-stamp-file C:/Users/ceulea/final/wamr_esp/wasm-micro-runtime/product-mini/platforms/windows/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-4.1\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeASMInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeASM_MASMInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\MSVC-ASM.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Internal\CMakeASMLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Internal\CMakeASM_MASMLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Internal\CMakeCLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Linker\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Linker\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Linker\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Linker\GNU.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-ASM.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-GNU-ASM.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-GNU.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\WriteBasicConfigVersionFile.cmake;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\build-scripts\config_common.cmake;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\build-scripts\iwasmConfig.cmake.in;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\build-scripts\package.cmake;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\build-scripts\runtime_lib.cmake;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\build-scripts\version.cmake;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\iwasm\common\iwasm_common.cmake;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\iwasm\interpreter\iwasm_interp.cmake;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\iwasm\libraries\libc-builtin\libc_builtin.cmake;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\iwasm\libraries\libc-wasi\libc_wasi.cmake;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\mem-alloc\mem_alloc.cmake;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\platform\common\libc-util\platform_common_libc_util.cmake;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\platform\common\memory\platform_api_memory.cmake;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\platform\windows\shared_platform.cmake;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\utils\shared_utils.cmake;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\utils\uncommon\shared_uncommon.cmake;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\version.h.in;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\product-mini\platforms\windows\build\CMakeFiles\4.1.0\CMakeASMCompiler.cmake;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\product-mini\platforms\windows\build\CMakeFiles\4.1.0\CMakeASM_MASMCompiler.cmake;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\product-mini\platforms\windows\build\CMakeFiles\4.1.0\CMakeCCompiler.cmake;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\product-mini\platforms\windows\build\CMakeFiles\4.1.0\CMakeCXXCompiler.cmake;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\product-mini\platforms\windows\build\CMakeFiles\4.1.0\CMakeRCCompiler.cmake;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\product-mini\platforms\windows\build\CMakeFiles\4.1.0\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\product-mini\platforms\windows\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/ceulea/final/wamr_esp/wasm-micro-runtime/product-mini/platforms/windows/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/ceulea/final/wamr_esp/wasm-micro-runtime/product-mini/platforms/windows -BC:/Users/ceulea/final/wamr_esp/wasm-micro-runtime/product-mini/platforms/windows/build --check-stamp-file C:/Users/ceulea/final/wamr_esp/wasm-micro-runtime/product-mini/platforms/windows/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-4.1\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeASMInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeASM_MASMInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\MSVC-ASM.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Internal\CMakeASMLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Internal\CMakeASM_MASMLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Internal\CMakeCLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Linker\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Linker\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Linker\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Linker\GNU.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-ASM.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-GNU-ASM.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-GNU.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\WriteBasicConfigVersionFile.cmake;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\build-scripts\config_common.cmake;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\build-scripts\iwasmConfig.cmake.in;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\build-scripts\package.cmake;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\build-scripts\runtime_lib.cmake;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\build-scripts\version.cmake;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\iwasm\common\iwasm_common.cmake;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\iwasm\interpreter\iwasm_interp.cmake;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\iwasm\libraries\libc-builtin\libc_builtin.cmake;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\iwasm\libraries\libc-wasi\libc_wasi.cmake;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\mem-alloc\mem_alloc.cmake;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\platform\common\libc-util\platform_common_libc_util.cmake;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\platform\common\memory\platform_api_memory.cmake;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\platform\windows\shared_platform.cmake;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\utils\shared_utils.cmake;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\utils\uncommon\shared_uncommon.cmake;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\version.h.in;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\product-mini\platforms\windows\build\CMakeFiles\4.1.0\CMakeASMCompiler.cmake;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\product-mini\platforms\windows\build\CMakeFiles\4.1.0\CMakeASM_MASMCompiler.cmake;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\product-mini\platforms\windows\build\CMakeFiles\4.1.0\CMakeCCompiler.cmake;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\product-mini\platforms\windows\build\CMakeFiles\4.1.0\CMakeCXXCompiler.cmake;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\product-mini\platforms\windows\build\CMakeFiles\4.1.0\CMakeRCCompiler.cmake;C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\product-mini\platforms\windows\build\CMakeFiles\4.1.0\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\product-mini\platforms\windows\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\product-mini\platforms\windows\main.c" />
+    <ClCompile Include="C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\platform\windows\platform_init.c" />
+    <ClCompile Include="C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\platform\windows\win_atomic.cpp" />
+    <ClCompile Include="C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\platform\windows\win_clock.c" />
+    <ClCompile Include="C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\platform\windows\win_file.c" />
+    <ClCompile Include="C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\platform\windows\win_malloc.c" />
+    <ClCompile Include="C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\platform\windows\win_memmap.c" />
+    <ClCompile Include="C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\platform\windows\win_socket.c" />
+    <ClCompile Include="C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\platform\windows\win_thread.c" />
+    <ClCompile Include="C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\platform\windows\win_time.c" />
+    <ClCompile Include="C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\platform\windows\win_util.c" />
+    <ClCompile Include="C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\platform\common\libc-util\libc_errno.c" />
+    <ClCompile Include="C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\platform\common\memory\mremap.c" />
+    <ClCompile Include="C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\utils\uncommon\bh_getopt.c" />
+    <ClCompile Include="C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\utils\uncommon\bh_read_file.c" />
+    <ClCompile Include="C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\utils\bh_assert.c" />
+    <ClCompile Include="C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\utils\bh_bitmap.c" />
+    <ClCompile Include="C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\utils\bh_common.c" />
+    <ClCompile Include="C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\utils\bh_hashmap.c" />
+    <ClCompile Include="C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\utils\bh_leb128.c" />
+    <ClCompile Include="C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\utils\bh_list.c" />
+    <ClCompile Include="C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\utils\bh_log.c" />
+    <ClCompile Include="C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\utils\bh_queue.c" />
+    <ClCompile Include="C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\utils\bh_vector.c" />
+    <ClCompile Include="C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\core\shared\utils\runtime_timer.c" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\product-mini\platforms\windows\build\ZERO_CHECK.vcxproj">
+      <Project>{A1936CF7-01FD-3935-BF80-D2DF2800DFDE}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ceulea\final\wamr_esp\wasm-micro-runtime\product-mini\platforms\windows\build\vmlib.vcxproj">
+      <Project>{F6B7F984-3AAA-3C62-A02F-8D36D454144C}</Project>
+      <Name>vmlib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
+  </ImportGroup>
+</Project>
